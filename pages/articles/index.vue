@@ -32,7 +32,7 @@
 <script>
 export default {
   head: {
-    titleTemplate: '%s | صفحه اصلی',
+    titleTemplate: '%s | صفحه مقالات',
   },
   computed: {
     mobile() {
