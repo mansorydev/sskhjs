@@ -1,43 +1,27 @@
 <template>
-  <v-app-bar clipped-right flat app dense>
-    <v-app-bar-nav-icon v-if="mobile"></v-app-bar-nav-icon>
-
-    <!--    <v-img
-      class="mr-3"
-      :lazy-src="require('@/assets/images/logo/logo.png')"
-      :src="require('@/assets/images/logo/logo.png')"
-      max-width="175"
-      height="16"
-    />-->
-
-    <v-toolbar-title class="">سولار صنعت خراسان</v-toolbar-title>
-
-    <v-spacer></v-spacer>
-
-    <v-btn icon nuxt to="/">
-      <span>خانه</span>
-    </v-btn>
-    <v-spacer></v-spacer>
-    <v-btn icon nuxt :to="{ name: 'articles' }">
-      <span>مقالات</span>
-    </v-btn>
-    <v-spacer></v-spacer>
-    <v-btn icon nuxt :to="{ name: 'aboutus' }">
-      <span>درباره ما</span>
-    </v-btn>
-    <v-spacer></v-spacer>
-  </v-app-bar>
+  <v-container>
+    <v-row class="pt-16">
+      <v-container class="text-center">
+        <v-col cols="12">
+          <h1>لورم ایپسوم</h1>
+          <p class="pt-5">
+            این راست نیست که هرچه عاشق‌ تر باشی بهتر درک می‌کنی. همه‌ی آنچه عشق
+            و عاشقی از من می‌ خواهد فقط درکِ این حکمت است: دیگری نشناختنی است؛
+            ماتیِ او پرده‌ی ابهامی به روی یک راز نیست، بل گواهی است که در آن
+            بازیِ بود و نمود هیچ‌ جایی ندارد. پس من در مسرتِ عشق ورزیدن به یک
+            ناشناس غرق می‌شوم، کسی که تا ابد ناشناس خواهد ماند. سِیری عارفانه:
+            من آن‌چه را نمی‌شناسم می‌شناسم...!
+          </p>
+        </v-col>
+      </v-container>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
 export default {
   head: {
-    titleTemplate: '%s | صفحه مقالات',
-  },
-  computed: {
-    mobile() {
-      return this.$vuetify.breakpoint.smAndDown
-    },
+    titleTemplate: '%s | صفحه درباره ما',
   },
 }
 </script>

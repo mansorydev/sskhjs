@@ -1,43 +1,164 @@
 <template>
-  <v-app-bar clipped-right flat app dense>
-    <v-app-bar-nav-icon v-if="mobile"></v-app-bar-nav-icon>
+  <v-container>
+    <v-row class="pt-16">
+      <v-container class="text-center">
+        <v-col cols="12">
+          <h1>لورم ایپسوم</h1>
+          <p class="pt-5">
+            این راست نیست که هرچه عاشق‌ تر باشی بهتر درک می‌کنی. همه‌ی آنچه عشق
+            و عاشقی از من می‌ خواهد فقط درکِ این حکمت است: دیگری نشناختنی است؛
+            ماتیِ او پرده‌ی ابهامی به روی یک راز نیست، بل گواهی است که در آن
+            بازیِ بود و نمود هیچ‌ جایی ندارد. پس من در مسرتِ عشق ورزیدن به یک
+            ناشناس غرق می‌شوم، کسی که تا ابد ناشناس خواهد ماند. سِیری عارفانه:
+            من آن‌چه را نمی‌شناسم می‌شناسم...!
+          </p>
+        </v-col>
+      </v-container>
+    </v-row>
 
-    <!--    <v-img
-      class="mr-3"
-      :lazy-src="require('@/assets/images/logo/logo.png')"
-      :src="require('@/assets/images/logo/logo.png')"
-      max-width="175"
-      height="16"
-    />-->
+    <v-row class="pt-16">
+      <v-col class="col-12 col-md-4">
+        <v-card class="mx-auto" max-width="344" outlined>
+          <v-list-item three-line>
+            <v-list-item-content>
+              <div class="overline mb-4">لورم ایپسوم</div>
+              <v-list-item-title class="headline mb-1">
+                تکنولوژی
+              </v-list-item-title>
+              <v-list-item-subtitle
+                >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.</v-list-item-subtitle
+              >
+            </v-list-item-content>
 
-    <v-toolbar-title class="">سولار صنعت خراسان</v-toolbar-title>
+            <v-list-item-avatar
+              tile
+              size="80"
+              color="grey"
+            ></v-list-item-avatar>
+          </v-list-item>
 
-    <v-spacer></v-spacer>
+          <v-card-actions>
+            <v-btn outlined rounded text> کلیک </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
 
-    <v-btn icon nuxt to="/">
-      <span>خانه</span>
-    </v-btn>
-    <v-spacer></v-spacer>
-    <v-btn icon nuxt :to="{ name: 'articles' }">
-      <span>مقالات</span>
-    </v-btn>
-    <v-spacer></v-spacer>
-    <v-btn icon nuxt :to="{ name: 'aboutus' }">
-      <span>درباره ما</span>
-    </v-btn>
-    <v-spacer></v-spacer>
-  </v-app-bar>
+      <v-col class="col-12 col-md-4">
+        <v-card class="mx-auto" max-width="344" outlined>
+          <v-list-item three-line>
+            <v-list-item-content>
+              <div class="overline mb-4">لورم ایپسوم</div>
+              <v-list-item-title class="headline mb-1">
+                تکنولوژی
+              </v-list-item-title>
+              <v-list-item-subtitle
+                >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.</v-list-item-subtitle
+              >
+            </v-list-item-content>
+
+            <v-list-item-avatar
+              tile
+              size="80"
+              color="grey"
+            ></v-list-item-avatar>
+          </v-list-item>
+
+          <v-card-actions>
+            <v-btn outlined rounded text> کلیک </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+
+      <v-col class="col-12 col-md-4">
+        <v-card class="mx-auto" max-width="344" outlined>
+          <v-list-item three-line>
+            <v-list-item-content>
+              <div class="overline mb-4">لورم ایپسوم</div>
+              <v-list-item-title class="headline mb-1">
+                تکنولوژی
+              </v-list-item-title>
+              <v-list-item-subtitle
+                >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.</v-list-item-subtitle
+              >
+            </v-list-item-content>
+
+            <v-list-item-avatar
+              tile
+              size="80"
+              color="grey"
+            ></v-list-item-avatar>
+          </v-list-item>
+
+          <v-card-actions>
+            <v-btn outlined rounded text> کلیک </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+
+      <v-col class="col-12 col-md-4">
+        <v-card class="mx-auto" max-width="344" outlined>
+          <v-list-item three-line>
+            <v-list-item-content>
+              <div class="overline mb-4">لورم ایپسوم</div>
+              <v-list-item-title class="headline mb-1">
+                تکنولوژی
+              </v-list-item-title>
+              <v-list-item-subtitle
+                >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.</v-list-item-subtitle
+              >
+            </v-list-item-content>
+
+            <v-list-item-avatar
+              tile
+              size="80"
+              color="grey"
+            ></v-list-item-avatar>
+          </v-list-item>
+
+          <v-card-actions>
+            <v-btn outlined rounded text> کلیک </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+
+      <v-col class="col-12 col-md-4">
+        <v-card class="mx-auto" max-width="344" outlined>
+          <v-list-item three-line>
+            <v-list-item-content>
+              <div class="overline mb-4">لورم ایپسوم</div>
+              <v-list-item-title class="headline mb-1">
+                تکنولوژی
+              </v-list-item-title>
+              <v-list-item-subtitle
+                >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.</v-list-item-subtitle
+              >
+            </v-list-item-content>
+
+            <v-list-item-avatar
+              tile
+              size="80"
+              color="grey"
+            ></v-list-item-avatar>
+          </v-list-item>
+
+          <v-card-actions>
+            <v-btn outlined rounded text> کلیک </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
 export default {
   head: {
     titleTemplate: '%s | صفحه اصلی',
-  },
-  computed: {
-    mobile() {
-      return this.$vuetify.breakpoint.smAndDown
-    },
   },
 }
 </script>
