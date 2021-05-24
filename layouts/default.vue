@@ -2,10 +2,6 @@
   <v-app id="bg-pic" :style="{ backgroundImage: `url(${theme})` }">
     <v-navigation-drawer v-if="mobile" v-model="drawer" right app>
       <v-list-item>
-        <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
-        </v-list-item-avatar>
-
         <v-list-item-content>
           <v-list-item-title>سولار صنعت خراسان</v-list-item-title>
         </v-list-item-content>
