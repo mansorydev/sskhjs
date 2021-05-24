@@ -13,13 +13,13 @@
 
       <v-divider></v-divider>
 
-      <v-list dense>
+      <v-list dense rounded>
         <v-list-item
           v-for="item in items"
           :key="item.title"
           link
           nuxt
-          :to="{ name: item.link }"
+          :to="{ path: item.link }"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -111,9 +111,9 @@ export default {
       drawer: false,
       name: 'انتخاب قالب ...',
       items: [
-        { link: 'index', title: 'خانه', icon: 'mdi-home' },
-        { link: 'articles', title: 'مقالات', icon: 'mdi-forum' },
-        { link: 'aboutus', title: 'درباره ما', icon: 'mdi-forum' },
+        { link: '/', title: 'خانه', icon: 'mdi-home' },
+        { link: '/articles', title: 'مقالات', icon: 'mdi-forum' },
+        { link: '/aboutus', title: 'درباره ما', icon: 'mdi-account-box' },
       ],
       pics: [
         { link: require(`~/assets/images/theme/1.jpg`) },
