@@ -3,7 +3,9 @@
     <v-navigation-drawer v-if="mobile" v-model="drawer" right app>
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title>سولار صنعت خراسان</v-list-item-title>
+          <v-list-item-title class="text-center"
+            >سولار صنعت خراسان</v-list-item-title
+          >
         </v-list-item-content>
       </v-list-item>
 
