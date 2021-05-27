@@ -39,7 +39,9 @@
           </v-list-item>
 
           <v-card-actions>
-            <v-btn outlined rounded text> کلیک </v-btn>
+            <v-btn outlined rounded text :to="{ path: `/articles/1` }">
+              کلیک
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -66,7 +68,9 @@
           </v-list-item>
 
           <v-card-actions>
-            <v-btn outlined rounded text> کلیک </v-btn>
+            <v-btn outlined rounded text :to="{ path: `/articles/1` }">
+              کلیک
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -93,7 +97,9 @@
           </v-list-item>
 
           <v-card-actions>
-            <v-btn outlined rounded text> کلیک </v-btn>
+            <v-btn outlined rounded text :to="{ path: `/articles/1` }">
+              کلیک
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -120,7 +126,9 @@
           </v-list-item>
 
           <v-card-actions>
-            <v-btn outlined rounded text> کلیک </v-btn>
+            <v-btn outlined rounded text :to="{ path: `/articles/1` }">
+              کلیک
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -147,7 +155,9 @@
           </v-list-item>
 
           <v-card-actions>
-            <v-btn outlined rounded text> کلیک </v-btn>
+            <v-btn outlined rounded text :to="{ path: `/articles/1` }">
+              کلیک
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
