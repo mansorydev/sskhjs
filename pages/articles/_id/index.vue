@@ -2,20 +2,14 @@
   <v-container>
     <v-row class="pt-16">
       <v-card class="mx-auto">
-        <v-img
-          class="white--text align-end"
-          height="200px"
-          src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-        >
-          <v-card-title> این یک نوشته آزمایشی است</v-card-title>
+        <v-img class="white--text align-end" height="200px" :src="post.image">
+          <!--          <v-card-title> این یک نوشته آزمایشی است</v-card-title>-->
         </v-img>
 
-        <v-card-subtitle class="pb-0"> لورم ایپسوم </v-card-subtitle>
+        <v-card-subtitle class="pb-0"> {{ post.title }} </v-card-subtitle>
 
         <v-card-text class="text--primary">
-          <div>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</div>
-
-          <div>از صنعت چاپ و با استفاده از طراحان گرافیک است.</div>
+          <div>{{ post.body }}</div>
         </v-card-text>
 
         <v-card-actions>
@@ -32,8 +26,19 @@
 
 <script>
 export default {
+  async fetch() {
+    await this.$store.dispatch('post/getPost', this.$route.params.id)
+  },
   head: {
     titleTemplate: '%s | نمایش اطلاعات',
+  },
+  computed: {
+    post() {
+      return this.$store.state.post.post
+    },
+    user() {
+      return this.$store.state.post.user
+    },
   },
 }
 </script>
