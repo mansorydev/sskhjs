@@ -32,16 +32,16 @@
 
 <script>
 export default {
-  data() {
-    return {
-      posts: [],
-    }
-  },
   async fetch() {
-    this.posts = await fetch('/api/posts')
+    await this.$store.dispatch('post/getPosts')
   },
   head: {
     titleTemplate: '%s | صفحه مقالات',
+  },
+  computed: {
+    posts() {
+      return this.$store.state.post.posts
+    },
   },
 }
 </script>
